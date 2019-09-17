@@ -1,0 +1,34 @@
+{
+    "presets": [
+       ["@babel/preset-env",{
+           // 使用的api 会自动转化，并且是按需加载
+           "useBuiltIns":"usage",
+           // babel-polyfill
+           "corejs":2
+       }],
+       "@babel/preset-react",
+       ["@babel/preset-typescript",{
+        "allExtensions": true  
+       }]
+    ],
+    "plugins": [
+        // 解析装饰器
+        ["@babel/plugin-proposal-decorators",{"legacy":true}],
+        // 解析类的属性
+        ["@babel/plugin-proposal-class-properties",{"loose":true}],
+        "@babel/plugin-transform-runtime"
+    ]
+}
+
+// ts-loader
+
+// 9月22日 开新班
+// 上课时间 周三周五晚上 8-10 周日全天  9.30 - 12.30  下午 2.30 - 6
+// 基础开始
+
+// 实体和在线都有的  
+
+// 每期 两期并行 2 4
+
+
+// 不要记名字 记功能
