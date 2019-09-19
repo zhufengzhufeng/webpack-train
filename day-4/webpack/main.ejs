@@ -81,23 +81,13 @@
 
 
 	// Load entry module and return exports
-	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+	return __webpack_require__(__webpack_require__.s = "<%-entryId%>");
 })
 ({
-
- "./src/index.js":
- (function(module, exports, __webpack_require__) {
-
-let title = __webpack_require__(/*! ./title */ "./src/title.js");
-console.log(title);
-
- }),
-
- "./src/title.js":
- (function(module, exports) {
-
-module.exports = 'title';
-
- })
-
+  <%for(let i=0;i<modules.length;i++){%>
+    "<%-modules[i].moduleId%>":
+    (function(module, exports, __webpack_require__) {
+       <%-modules[i]._source%>
+    }),
+  <%}%>
 });

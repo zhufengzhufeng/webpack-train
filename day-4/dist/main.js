@@ -84,20 +84,16 @@
 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 })
 ({
-
- "./src/index.js":
- (function(module, exports, __webpack_require__) {
-
-let title = __webpack_require__(/*! ./title */ "./src/title.js");
+  
+    "./src/index.js":
+    (function(module, exports, __webpack_require__) {
+       let title = __webpack_require__("./src/title.js");
 console.log(title);
-
- }),
-
- "./src/title.js":
- (function(module, exports) {
-
-module.exports = 'title';
-
- })
-
+    }),
+  
+    "./src/title.js":
+    (function(module, exports, __webpack_require__) {
+       module.exports = 'title';
+    }),
+  
 });

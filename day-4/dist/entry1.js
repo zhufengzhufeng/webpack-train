@@ -81,23 +81,19 @@
 
 
 	// Load entry module and return exports
-	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+	return __webpack_require__(__webpack_require__.s = "./src/entry1.js");
 })
 ({
-
- "./src/index.js":
- (function(module, exports, __webpack_require__) {
-
-let title = __webpack_require__(/*! ./title */ "./src/title.js");
+  
+    "./src/entry1.js":
+    (function(module, exports, __webpack_require__) {
+       let title = __webpack_require__("./src/title1.js");
 console.log(title);
-
- }),
-
- "./src/title.js":
- (function(module, exports) {
-
-module.exports = 'title';
-
- })
-
+    }),
+  
+    "./src/title1.js":
+    (function(module, exports, __webpack_require__) {
+       module.exports = 'title1';
+    }),
+  
 });
